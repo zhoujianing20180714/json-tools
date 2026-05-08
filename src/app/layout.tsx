@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     'format json online',
     'validate json online'
   ],
-  authors: [{ name: 'Free JSON Tools', url: 'https://freejsontools.com' }],
+  authors: [{ name: 'Free JSON Tools', url: 'https://www.freejsontools.com' }],
   creator: 'Free JSON Tools',
   publisher: 'Free JSON Tools',
-  metadataBase: new URL('https://freejsontools.com'),
+  metadataBase: new URL('https://www.freejsontools.com'),
   alternates: {
     canonical: '/',
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: 'Free online JSON tools for developers. Format, validate, and convert JSON instantly. No signup required.',
     type: 'website',
     locale: 'en_US',
-    url: 'https://freejsontools.com',
+    url: 'https://www.freejsontools.com',
     siteName: 'Free JSON Tools',
     images: [
       {
