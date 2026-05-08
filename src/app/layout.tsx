@@ -24,20 +24,20 @@ export const metadata: Metadata = {
     'format json online',
     'validate json online'
   ],
-  authors: [{ name: 'JSON Tools', url: 'https://jsontools.io' }],
-  creator: 'JSON Tools',
-  publisher: 'JSON Tools',
-  metadataBase: new URL('https://jsontools.io'),
+  authors: [{ name: 'Free JSON Tools', url: 'https://freejsontools.com' }],
+  creator: 'Free JSON Tools',
+  publisher: 'Free JSON Tools',
+  metadataBase: new URL('https://freejsontools.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'JSON Tools - Free JSON Formatter, Validator & Converter',
+    title: 'Free JSON Tools - JSON Formatter, Validator & Converter Online',
     description: 'Free online JSON tools for developers. Format, validate, and convert JSON instantly. No signup required.',
     type: 'website',
     locale: 'en_US',
-    url: 'https://jsontools.io',
-    siteName: 'JSON Tools',
+    url: 'https://freejsontools.com',
+    siteName: 'Free JSON Tools',
     images: [
       {
         url: '/og-image.png',
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'JSON Tools - Free JSON Formatter & Validator',
+    title: 'Free JSON Tools - JSON Formatter & Validator',
     description: 'Free online JSON tools for developers. Format, validate, and convert JSON instantly.',
     images: ['/og-image.png'],
-    creator: '@jsontools',
+    creator: '@freejsontools',
   },
   robots: {
     index: true,
@@ -75,9 +75,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'JSON Tools',
+  name: 'Free JSON Tools',
   description: 'Free online JSON tools for developers. Format, validate, and convert JSON instantly.',
-  url: 'https://jsontools.io',
+  url: 'https://freejsontools.com',
   applicationCategory: 'DeveloperApplication',
   operatingSystem: 'Any',
   offers: {

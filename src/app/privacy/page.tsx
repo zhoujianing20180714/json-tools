@@ -129,7 +129,7 @@ export default function PrivacyPage() {
             If you have questions about this privacy policy, please contact us:
           </p>
           <p className="text-slate-600 mt-4">
-            Email: <a href="mailto:privacy@jsontools.io" className="text-blue-600 hover:text-blue-700">privacy@jsontools.io</a>
+            Email: <a href="mailto:privacy@freejsontools.com" className="text-blue-600 hover:text-blue-700">privacy@freejsontools.com</a>
           </p>
 
           <div className="mt-12 p-6 bg-slate-50 rounded-lg border border-slate-200">

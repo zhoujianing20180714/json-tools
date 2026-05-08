@@ -107,7 +107,7 @@ export default function AboutPage() {
             Have suggestions, found a bug, or want to say hi? We'd love to hear from you!
           </p>
           <p className="text-slate-600 mt-4">
-            Email: <a href="mailto:contact@jsontools.io" className="text-blue-600 hover:text-blue-700">contact@jsontools.io</a>
+            Email: <a href="mailto:contact@freejsontools.com" className="text-blue-600 hover:text-blue-700">contact@freejsontools.com</a>
           </p>
 
           <div className="mt-12 p-6 bg-blue-50 rounded-lg border border-blue-200">
