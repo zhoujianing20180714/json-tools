@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
@@ -25,31 +25,14 @@ jobs:
     - name: Build project
       run: npm run build
       
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: build-output
-        path: out/
-        retention-days: 1
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment: production
-    
-    steps:
-    - name: Download build artifacts
-      uses: actions/download-artifact@v4
-      with:
-        name: build-output
-        path: out/
+    - name: Install lftp
+      run: sudo apt-get install -y lftp
       
-    - name: Deploy to Hostinger via FTP
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: out/
-        server-dir: /public_html/
-        exclude: "*.txt"
+    - name: Deploy via FTP
+      run: |
+        lftp -c "
+        set ftp:ssl-allow no;
+        open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }};
+        mirror -R out/ /public_html/;
+        quit
+        "
